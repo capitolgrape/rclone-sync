@@ -5,5 +5,5 @@ while true; do
         --transfers 4 \
         --log-level INFO
         
-    sleep 60
+    sleep 120
 done
