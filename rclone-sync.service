@@ -1,0 +1,15 @@
+[Unit]
+Description=Rclone auto-sync
+After=network-online.target
+
+[Service]
+User=%i
+Group=%i
+
+ExecStart=/home/%i/sync.sh
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
